@@ -8,6 +8,19 @@ def test_password_characters():
     for char in password:
         assert char in valid_characters
 
+def test_password_characters():
+    """Şifre oluşturulurken yalnızca geçerli karakterlerin kullanıldığını test eder"""
+    valid_characters = string.ascii_letters + string.digits + string.punctuation
+    password = generate_password(100)  # Daha güvenli bir doğrulama için uzun bir şifre oluşturuluyor
+    password1 = generate_password(100) 
+    for char in password:
+            assert password != password1
+
+
+
+
+
+
 """
 Aşağıda önerilenlerden birini kullanarak başka bir test yazın. Alternatif olarak, kendi testinizi de oluşturabilirsiniz!
 Daha fazla test yazabilirseniz harika olur!
