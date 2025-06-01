@@ -1,5 +1,6 @@
 import string
 from password.new_password import generate_password
+import random
 
 def test_password_characters():
     """Şifre oluşturulurken yalnızca geçerli karakterlerin kullanıldığını test eder"""
@@ -15,3 +16,14 @@ Daha fazla test yazabilirseniz harika olur!
 1. Şifrenin uzunluğunun belirtilen uzunlukla eşleşip eşleşmediğini test edin  
 2. Arka arkaya oluşturulan iki şifrenin farklı olup olmadığını test edin 
 """
+def test_password_length():
+    """Şifrenin uzunluğunun belirtilen uzunlukla eşleştiğini test eder"""
+    length = random.randint(6,100)
+    password = generate_password(length)
+    assert len(password) == length
+
+def test_password_uniqueness():
+    """Arka arkaya oluşturulan iki şifrenin farklı olduğunu test eder"""
+    password1 = generate_password(20)
+    password2 = generate_password(20)
+    assert password1 != password2  
