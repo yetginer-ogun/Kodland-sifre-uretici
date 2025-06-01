@@ -24,7 +24,7 @@ Daha sonra testleri proje dizininin kök klasöründen şu komutla çalıştıra
 pytest
 ```
 
-## kraga
+## aren
 
-Kodland
+kraga
 :)
