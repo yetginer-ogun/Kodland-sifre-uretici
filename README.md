@@ -24,6 +24,9 @@ Daha sonra testleri proje dizininin kök klasöründen şu komutla çalıştıra
 pytest
 ```
 
-## ✍️ Yazar
+## DENİZ
 
 Kodland
+
+I©╚§┌ïÑ¸ãµ▼▬À╗êE╔Ã@
+
